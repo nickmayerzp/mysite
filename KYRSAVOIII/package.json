@@ -1,0 +1,33 @@
+{
+  "name": "KYRSAVOIIII",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.5.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "vue-axios": "^2.1.4",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "vue.js": "^0.3.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
