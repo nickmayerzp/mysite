@@ -23,8 +23,20 @@ module.exports = {
                 loader: 'vue-loader'
             },{
                 test: /\.css$/,
-                loader:[ 'style-loader', 'css-loader' ]
-            }
+                loaders: [
+                    'style-loader', 
+                    'css-loader',
+                ]
+            },  {
+                test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                loader: 'url-loader?importLoaders=1&limit=100000'
+              }, {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                  'url-loader?limit=10000',
+                  'img-loader'
+                ]
+              }
             // this will apply to both plain `.js` files
             // AND `<script>` blocks in `.vue` files
             // {

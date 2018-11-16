@@ -321,7 +321,7 @@
                 this.pagination=this.paginator(this.rep.length,p);
             },
             paginate(rep){
-                return _.slice(rep,this.pagination.startIndex, this.pagination.endIndex +1)
+               // return _.slice(rep,this.pagination.startIndex, this.pagination.endIndex +1)
             },
             paginator(totalItems,currentPage){
                 var startIndex=(currentPage-1)*this.perPage,
@@ -330,7 +330,7 @@
                     currentPage:currentPage,
                     startIndex:startIndex,
                     endIndex:endIndex,
-                    pages: _.range(1,Math.ceil(totalItems / this.perPage) + 1)
+                   // pages: _.range(1,Math.ceil(totalItems / this.perPage) + 1)
                 };
             },
 
@@ -376,8 +376,8 @@
         font: 17px/1.42 Roboto,Arial,Helvetica,sans-serif;
         text-align: center;
         color: #444;
-        background: url(./img/body-2.jpg) #DECEB9;
-        background-image: url(./img/body-2.jpg);
+        background: url('../assets/img/body-2.jpg') #DECEB9;
+        background-image: url('../assets/img/body-2.jpg');
         background-position-x: initial;
         background-position-y: initial;
         background-size: initial;
@@ -392,7 +392,7 @@
     }
     @font-face {
         font-family: Roboto; /* Имя шрифта */
-        src: url(./Roboto.ttf); /* Путь к файлу со шрифтом */
+        src: url('../assets/fonts/Roboto.ttf'); /* Путь к файлу со шрифтом */
     }
     .block{
         background: #fff;
@@ -415,7 +415,7 @@
 
     }
     .popular{
-        background: url(./img/ribbons.png) -300px -11px no-repeat;
+        background: url('../assets/img/ribbons.png') -300px -11px no-repeat;
         height: 43px;
         width: 300px;
         position: static;
@@ -442,7 +442,7 @@
     .new{
         background-repeat: no-repeat;
         background-position: -50px -64px;
-        background-image: url(./img/ribbons.png);
+        background-image: url('../assets/img/ribbons.png');
         height: 43px;
         width: 215px;
         position: static;
@@ -472,7 +472,7 @@
         font			: bold 24px/45px Roboto, Sans-Serif;
         letter-spacing		: -1px;
         /* на случай, если следующая строка не сработает */
-        background: url(./img/ribbons.png) no-repeat -290px -7px;
+        background: url('../assets/img/ribbons.png') no-repeat -290px -7px;
         /*padding			: 10px;*/
         height: 50px;
         width: 290px;
@@ -514,7 +514,7 @@
         height: 100%;
     }*/
     .img-mask {
-        background: url(./img/image-mask.png);
+        background: url('../assets/img/image-mask.png');
         height: 100%;
         position: absolute;
     }
@@ -661,7 +661,7 @@
         font:  18px Roboto;
         transition: all 0.3s ease;
 
-    }
+    } 
     .span{
         padding-bottom: 5px;
         transition: all 0.3s ease;
