@@ -1,11 +1,25 @@
 import Vue from 'vue'
-import App from './components/App.vue'
 import VueRouter from 'vue-router'
+
+import App from './components/App.vue'
+import rep from './components/rep.vue'
+import repInfo from './components/repInfo.vue'
+
+
+const routes = [
+    { path: '/', component: rep },
+    { path: '/rep/:_id', component: repInfo }]
+
+const router = new VueRouter({
+    routes
+})
+
 
 Vue.use(VueRouter)
 new Vue({
     render: h => h(App),
     el: '#app',
+    router
 })
 
 
