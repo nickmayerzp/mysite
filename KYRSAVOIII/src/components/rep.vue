@@ -64,7 +64,7 @@
                             </div>
                         </div>
 
-                        <b-pagination align="center" class="btn btn-danger" v-for="p in pagination.pages" @click.prevent="setPage(p)" v-bind:key="index">
+                        <b-pagination align="center" class="btn btn-danger" v-for="p in pagination.pages" @click.prevent="setPage(p)" v-bind:key="p._id">
                             {{p}}
                         </b-pagination>
 
