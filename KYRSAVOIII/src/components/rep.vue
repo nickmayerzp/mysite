@@ -49,8 +49,8 @@
                         <div class="container-fluid" id="blockImg ">
                             <div class="row">
 
-                                <div v-bind:key="id" v-for="(item,index) in filteredItems" class="col-md-4 pad1 " >
-                                    <router-link v-bind:to="/main/+item.id">
+                                <div  v-for="(item,index) in filteredItems" class="col-md-4 pad1 " v-bind:key="index">
+                                    <router-link v-bind:to="/rep/+item._id">
                                         <div class="kartinka">
 
                                             <img v-bind:src="item.img" width="100%" height="100%" >
@@ -64,7 +64,7 @@
                             </div>
                         </div>
 
-                        <b-pagination align="center" class="btn btn-danger"v-bind:key="id" v-for="p in pagination.pages" @click.prevent="setPage(p)">
+                        <b-pagination align="center" class="btn btn-danger" v-for="p in pagination.pages" @click.prevent="setPage(p)" v-bind:key="index">
                             {{p}}
                         </b-pagination>
 

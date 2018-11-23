@@ -43,22 +43,11 @@
                         <div class="container-fluid" id="blockImg ">
                             <div class="row">
 
-                                <div v-bind:key="id" v-for="(item,index) in filteredItems" class="col-md-4 pad1 " >
-                                    <router-link v-bind:to="/main/+item.id">
-                                        <div class="kartinka">
-
-                                            <img v-bind:src="item.img" width="100%" height="100%" >
-                                        </div>
-                                        <!--<img :src="rep[0].img" width="100%" height="100%" />-->
-                                        <div class="white">
-                                            {{item.op}}
-                                        </div>
-                                    </router-link>
-                                </div>
+                                Тут код для обраного рецепта, тягнемо по id потрібний
                             </div>
                         </div>
 
-                        <b-pagination align="center" class="btn btn-danger"v-bind:key="id" v-for="p in pagination.pages" @click.prevent="setPage(p)">
+                        <b-pagination align="center" class="btn btn-danger" v-for="p in pagination.pages" @click.prevent="setPage(p)" v-bind:key="p.id">
                             {{p}}
                         </b-pagination>
 
